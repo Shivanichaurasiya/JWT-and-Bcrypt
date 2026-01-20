@@ -10,9 +10,6 @@ const getdataRoute = require("./routes/getdataRoute")
 const loginRoute = require("./routes/loginRoute")
 const dashboardRoute = require("./routes/dashboardRoute")
 
-
-
-
 const app = express()
 
 dotenv.config(); // load the .env configuration
