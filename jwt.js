@@ -5,9 +5,6 @@ const app = express();
 dotenv.config() //load dotenv files
 const port = process.env.PORT || 8000
 
-app.listen(port, ()=>{
-    console.log(`server is running on the port http://localhost:${port}`);
-})
 
 
 //genrating jwt token
@@ -43,4 +40,7 @@ app.get('/user/validatetoken',(req,res)=>{
         return res.status(401).send(error)
     }
 
+})
+app.listen(port, ()=>{
+    console.log(`server is running on the port http://localhost:${port}`);
 })
